@@ -36,9 +36,9 @@ if user_prompt:
     st.chat_message("user").markdown(user_prompt)
 
     
-    if "who are you" in user_prompt.lower() or "your name" in user_prompt.lower() or "what are you" in user_prompt.lower() or "tell me about you" in user_prompt.lower() or "who made you" in user_prompt.lower() or "are you gemini" in user_prompt.lower():
+    if "who are you" in user_prompt.lower() or "your name" in user_prompt.lower() or "what are you" in user_prompt.lower() or "tell me about you" in user_prompt.lower() or "who made you" in user_prompt.lower() or "hy" in user_prompt.lower() or "who is lumina" in user_prompt.lower() or "are you gemini" in user_prompt.lower():
         lumina_response_text = (
-            "I am Lumina, designed by Muhammad Yousaf. My backend is powered by the Gemini Pro model."
+            "Hy I am Lumina, designed by Muhammad Yousaf. My backend is powered by the Gemini Pro model."
         )
     else:
         lumina_response = st.session_state.chat_session.send_message(user_prompt)
